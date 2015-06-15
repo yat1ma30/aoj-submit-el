@@ -1,6 +1,6 @@
 # aoj-submit.el
 
-An (AOJ)[http://judge.u-aizu.ac.jp/onlinejudge/] client for Emacs.
+An [AOJ](http://judge.u-aizu.ac.jp/onlinejudge/) client for Emacs.
 
 ## Installation
 
