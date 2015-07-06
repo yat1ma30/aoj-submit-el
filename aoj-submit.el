@@ -16,7 +16,6 @@
 
 (defcustom aoj-id nil "Your ID")
 (defcustom aoj-password nil "Your Passwd")
-(defcustom aoj-open-after-submit t "Browse status url after submit")
 
 
 (defvar aoj-supported-languages-alist
