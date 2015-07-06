@@ -16,6 +16,7 @@
 
 (defcustom aoj-id nil "Your ID")
 (defcustom aoj-password nil "Your Passwd")
+(defcustom aoj-open-after-submit t "Browse status url after submit")
 
 
 (defvar aoj-supported-languages-alist
@@ -33,8 +34,12 @@
         (url-request-data          (aoj--payload))
         (url                       "http://judge.u-aizu.ac.jp/onlinejudge/webservice/submit"))
     (switch-to-buffer (url-retrieve-synchronously url)
-      (buffer-string))))
+      (buffer-string))
+    (aoj-open)))
 
+(defun aoj-open ()
+  (interactive)
+  (browse-url "http://judge.u-aizu.ac.jp/onlinejudge/status.jsp"))
 
 (defun aoj--language ()
   (assoc-default
