@@ -19,10 +19,19 @@
 
 
 (defvar aoj-supported-languages-alist
-  '(("java" . "JAVA")
+  '(("c" . "C")
     ("cpp" . "C++")
     ("cc" . "C++")
-    ("c" . "C")
+    ("java" . "JAVA")
+    ("cs" . "C#")
+    ("d" . "D")
+    ("rb" . "Ruby")
+    ("py" . "Python")
+    ("php" . "PHP")
+    ("js" . "JavaScript")
+    ("scala" . "Scala")
+    ("hs" . "Haskell")
+    ("ml" . "OCaml")
     (nil . "C")))
 
 
